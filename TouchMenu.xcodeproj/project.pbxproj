@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A49A5CC5175DD40E00F66865 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49A5CC4175DD40E00F66865 /* UIKit.framework */; };
+		A49A5CC7175DD40E00F66865 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49A5CC6175DD40E00F66865 /* Foundation.framework */; };
+		A49A5CC9175DD40E00F66865 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49A5CC8175DD40E00F66865 /* CoreGraphics.framework */; };
+		A49A5CCB175DD40E00F66865 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49A5CCA175DD40E00F66865 /* CoreData.framework */; };
+		A49A5CD1175DD40F00F66865 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A49A5CCF175DD40F00F66865 /* InfoPlist.strings */; };
+		A49A5CD3175DD40F00F66865 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A49A5CD2175DD40F00F66865 /* main.m */; };
+		A49A5CD7175DD40F00F66865 /* FrontlineAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A49A5CD6175DD40F00F66865 /* FrontlineAppDelegate.m */; };
+		A49A5CD9175DD41000F66865 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A5CD8175DD41000F66865 /* Default.png */; };
+		A49A5CDB175DD41000F66865 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A5CDA175DD41000F66865 /* Default@2x.png */; };
+		A49A5CDD175DD41000F66865 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A5CDC175DD41000F66865 /* Default-568h@2x.png */; };
+		A49A5CE0175DD41000F66865 /* TouchMenu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A49A5CDE175DD41000F66865 /* TouchMenu.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A49A5CC1175DD40E00F66865 /* TouchMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A49A5CC4175DD40E00F66865 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A49A5CC6175DD40E00F66865 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A49A5CC8175DD40E00F66865 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A49A5CCA175DD40E00F66865 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A49A5CCE175DD40F00F66865 /* TouchMenu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchMenu-Info.plist"; sourceTree = "<group>"; };
+		A49A5CD0175DD40F00F66865 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A49A5CD2175DD40F00F66865 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A49A5CD4175DD40F00F66865 /* TouchMenu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchMenu-Prefix.pch"; sourceTree = "<group>"; };
+		A49A5CD5175DD40F00F66865 /* FrontlineAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrontlineAppDelegate.h; sourceTree = "<group>"; };
+		A49A5CD6175DD40F00F66865 /* FrontlineAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrontlineAppDelegate.m; sourceTree = "<group>"; };
+		A49A5CD8175DD41000F66865 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A49A5CDA175DD41000F66865 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A49A5CDC175DD41000F66865 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A49A5CDF175DD41000F66865 /* TouchMenu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TouchMenu.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A49A5CBE175DD40E00F66865 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A49A5CC5175DD40E00F66865 /* UIKit.framework in Frameworks */,
+				A49A5CC7175DD40E00F66865 /* Foundation.framework in Frameworks */,
+				A49A5CC9175DD40E00F66865 /* CoreGraphics.framework in Frameworks */,
+				A49A5CCB175DD40E00F66865 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A49A5CB8175DD40E00F66865 = {
+			isa = PBXGroup;
+			children = (
+				A49A5CCC175DD40E00F66865 /* TouchMenu */,
+				A49A5CC3175DD40E00F66865 /* Frameworks */,
+				A49A5CC2175DD40E00F66865 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A49A5CC2175DD40E00F66865 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A49A5CC1175DD40E00F66865 /* TouchMenu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A49A5CC3175DD40E00F66865 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A49A5CC4175DD40E00F66865 /* UIKit.framework */,
+				A49A5CC6175DD40E00F66865 /* Foundation.framework */,
+				A49A5CC8175DD40E00F66865 /* CoreGraphics.framework */,
+				A49A5CCA175DD40E00F66865 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A49A5CCC175DD40E00F66865 /* TouchMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A49A5CD5175DD40F00F66865 /* FrontlineAppDelegate.h */,
+				A49A5CD6175DD40F00F66865 /* FrontlineAppDelegate.m */,
+				A49A5CDE175DD41000F66865 /* TouchMenu.xcdatamodeld */,
+				A49A5CCD175DD40F00F66865 /* Supporting Files */,
+			);
+			path = TouchMenu;
+			sourceTree = "<group>";
+		};
+		A49A5CCD175DD40F00F66865 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A49A5CCE175DD40F00F66865 /* TouchMenu-Info.plist */,
+				A49A5CCF175DD40F00F66865 /* InfoPlist.strings */,
+				A49A5CD2175DD40F00F66865 /* main.m */,
+				A49A5CD4175DD40F00F66865 /* TouchMenu-Prefix.pch */,
+				A49A5CD8175DD41000F66865 /* Default.png */,
+				A49A5CDA175DD41000F66865 /* Default@2x.png */,
+				A49A5CDC175DD41000F66865 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A49A5CC0175DD40E00F66865 /* TouchMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A49A5CE3175DD41000F66865 /* Build configuration list for PBXNativeTarget "TouchMenu" */;
+			buildPhases = (
+				A49A5CBD175DD40E00F66865 /* Sources */,
+				A49A5CBE175DD40E00F66865 /* Frameworks */,
+				A49A5CBF175DD40E00F66865 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchMenu;
+			productName = TouchMenu;
+			productReference = A49A5CC1175DD40E00F66865 /* TouchMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A49A5CB9175DD40E00F66865 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Frontline;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = WV;
+			};
+			buildConfigurationList = A49A5CBC175DD40E00F66865 /* Build configuration list for PBXProject "TouchMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A49A5CB8175DD40E00F66865;
+			productRefGroup = A49A5CC2175DD40E00F66865 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A49A5CC0175DD40E00F66865 /* TouchMenu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A49A5CBF175DD40E00F66865 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A49A5CD1175DD40F00F66865 /* InfoPlist.strings in Resources */,
+				A49A5CD9175DD41000F66865 /* Default.png in Resources */,
+				A49A5CDB175DD41000F66865 /* Default@2x.png in Resources */,
+				A49A5CDD175DD41000F66865 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A49A5CBD175DD40E00F66865 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A49A5CD3175DD40F00F66865 /* main.m in Sources */,
+				A49A5CD7175DD40F00F66865 /* FrontlineAppDelegate.m in Sources */,
+				A49A5CE0175DD41000F66865 /* TouchMenu.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A49A5CCF175DD40F00F66865 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A49A5CD0175DD40F00F66865 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A49A5CE1175DD41000F66865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A49A5CE2175DD41000F66865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A49A5CE4175DD41000F66865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchMenu/TouchMenu-Prefix.pch";
+				INFOPLIST_FILE = "TouchMenu/TouchMenu-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A49A5CE5175DD41000F66865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchMenu/TouchMenu-Prefix.pch";
+				INFOPLIST_FILE = "TouchMenu/TouchMenu-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A49A5CBC175DD40E00F66865 /* Build configuration list for PBXProject "TouchMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A49A5CE1175DD41000F66865 /* Debug */,
+				A49A5CE2175DD41000F66865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A49A5CE3175DD41000F66865 /* Build configuration list for PBXNativeTarget "TouchMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A49A5CE4175DD41000F66865 /* Debug */,
+				A49A5CE5175DD41000F66865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A49A5CDE175DD41000F66865 /* TouchMenu.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A49A5CDF175DD41000F66865 /* TouchMenu.xcdatamodel */,
+			);
+			currentVersion = A49A5CDF175DD41000F66865 /* TouchMenu.xcdatamodel */;
+			path = TouchMenu.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A49A5CB9175DD40E00F66865 /* Project object */;
+}
