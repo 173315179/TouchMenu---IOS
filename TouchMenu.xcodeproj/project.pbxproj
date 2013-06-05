@@ -18,6 +18,8 @@
 		A49A5CDB175DD41000F66865 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A5CDA175DD41000F66865 /* Default@2x.png */; };
 		A49A5CDD175DD41000F66865 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A5CDC175DD41000F66865 /* Default-568h@2x.png */; };
 		A49A5CE0175DD41000F66865 /* TouchMenu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A49A5CDE175DD41000F66865 /* TouchMenu.xcdatamodeld */; };
+		A49A5CE9175DD77E00F66865 /* TouchMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = A49A5CE8175DD77E00F66865 /* TouchMenu.m */; };
+		A49A5CEC175DE1B300F66865 /* FrontlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A49A5CEB175DE1B300F66865 /* FrontlineViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,10 @@
 		A49A5CDA175DD41000F66865 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A49A5CDC175DD41000F66865 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A49A5CDF175DD41000F66865 /* TouchMenu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TouchMenu.xcdatamodel; sourceTree = "<group>"; };
+		A49A5CE7175DD77E00F66865 /* TouchMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchMenu.h; sourceTree = "<group>"; };
+		A49A5CE8175DD77E00F66865 /* TouchMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchMenu.m; sourceTree = "<group>"; };
+		A49A5CEA175DE1B300F66865 /* FrontlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontlineViewController.h; sourceTree = "<group>"; };
+		A49A5CEB175DE1B300F66865 /* FrontlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontlineViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +90,11 @@
 		A49A5CCC175DD40E00F66865 /* TouchMenu */ = {
 			isa = PBXGroup;
 			children = (
+				A49A5CE6175DD41F00F66865 /* TouchMenuView */,
 				A49A5CD5175DD40F00F66865 /* FrontlineAppDelegate.h */,
 				A49A5CD6175DD40F00F66865 /* FrontlineAppDelegate.m */,
+				A49A5CEA175DE1B300F66865 /* FrontlineViewController.h */,
+				A49A5CEB175DE1B300F66865 /* FrontlineViewController.m */,
 				A49A5CDE175DD41000F66865 /* TouchMenu.xcdatamodeld */,
 				A49A5CCD175DD40F00F66865 /* Supporting Files */,
 			);
@@ -104,6 +113,15 @@
 				A49A5CDC175DD41000F66865 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A49A5CE6175DD41F00F66865 /* TouchMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				A49A5CE7175DD77E00F66865 /* TouchMenu.h */,
+				A49A5CE8175DD77E00F66865 /* TouchMenu.m */,
+			);
+			name = TouchMenuView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +193,8 @@
 				A49A5CD3175DD40F00F66865 /* main.m in Sources */,
 				A49A5CD7175DD40F00F66865 /* FrontlineAppDelegate.m in Sources */,
 				A49A5CE0175DD41000F66865 /* TouchMenu.xcdatamodeld in Sources */,
+				A49A5CE9175DD77E00F66865 /* TouchMenu.m in Sources */,
+				A49A5CEC175DE1B300F66865 /* FrontlineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

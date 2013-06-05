@@ -7,7 +7,7 @@
 //
 
 #import "FrontlineAppDelegate.h"
-
+#import "FrontlineViewController.h"
 @implementation FrontlineAppDelegate
 
 - (void)dealloc
@@ -25,10 +25,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    FrontlineViewController *ctl = [[FrontlineViewController alloc] init];
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = ctl;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
