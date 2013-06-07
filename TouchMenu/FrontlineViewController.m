@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    TouchMenu *tm = [TouchMenu createWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) size:CGSizeMake(200, 200) isFollowTouch:YES isLine:NO imagesPath:@[@"",@"",@""] parent:self.view];
+    TouchMenu *tm = [TouchMenu createWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) size:CGSizeMake(200, 200) isFollowTouch:YES isLine:NO imagesPath:@[@"plus_32",@"plus_32",@"plus_32",@"plus_32",@"plus_32",@"plus_32",@"plus_32"] parent:self.view];
     [tm setDelegate:self];
     [self.view addSubview:tm];
 }

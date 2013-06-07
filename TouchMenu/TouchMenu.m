@@ -50,9 +50,8 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
             [UIView animateWithDuration:0.3 animations:^{
                 self.alpha = 1.0;
             } completion:^(BOOL finished) {
-            
+                
             }];
-//            [self performSelector:@selector(checkLine) withObject:nil afterDelay:0.1];
         };break;
         case UIGestureRecognizerStateEnded:{
             [UIView animateWithDuration:0.3 animations:^{
@@ -83,6 +82,7 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
             } completion:^(BOOL finished) {
             }];
         };break;
+        default:break;
     }
 }
 
@@ -91,7 +91,6 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
 }
 
 -(void)drawRect:(CGRect)rect{
-    
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetLineCap(context, kCGLineCapRound);
     CGContextSetLineWidth(context, 1.0f);
@@ -123,7 +122,7 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
     
     for(int i = 1; i <= _count ; i ++){
         if(ragReal > (360.0f/_count * (i-1)) && ragReal < (360.0f/_count * i )){
-
+            
             CGContextSetFillColorWithColor(context, [UIColor colorWithRed:0.7 green:0.7 blue:0.9 alpha:1].CGColor);
             _idx = i;
         }else{
@@ -146,7 +145,9 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
         CGContextClosePath(context);
         
         CGContextStrokePath(context);
+        
     }
+    
     
     if(_isLine){
         CGContextMoveToPoint(context, _position.x, _position.y);
@@ -161,6 +162,55 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
         CGContextClosePath(context);
         
         CGContextStrokePath(context);
+    }
+    
+    for(int i = 1; i <= _count ; i ++){
+        
+        NSString *strImagePath = [_arrImagesPath objectAtIndex:i-1];
+        UIImage *img =[UIImage imageNamed:strImagePath];
+        
+        float R = _size.width * 0.5;
+        float rage = 360.0f/_count;
+        float r = 0;
+        if(_count==1){
+            r = R;
+        }else{
+            r = (sin(radians(rage*0.5))*R)/(sin(radians(rage*0.5))+1);
+        }
+        float squareWidth = r*sqrt(2);
+        float zLine = R-r;
+        float realRage = 360.0f/_count * (i-0.5);
+        if(realRage < 90){ //- + y ,x
+            float y = zLine * sin( radians(realRage));
+            float x = zLine * cos( radians(realRage));
+            [img drawInRect:CGRectMake(_position.x + x - squareWidth*0.5, _position.y + y - squareWidth*0.5, squareWidth, squareWidth)];
+            NSLog(@"%d -1- x : %f 【%f】, y : %f 【%f】, width: %f ",i,_position.x - x,x, _position.y - y, y ,squareWidth);
+        }else if(realRage == 90){
+            [img drawInRect:CGRectMake(_position.x - squareWidth*0.5, _position.y + zLine - squareWidth*0.5, squareWidth, squareWidth)];
+            
+        }else if(realRage < 180){ //+ + x , y
+            float x = zLine * sin( radians(realRage - 90.0f));
+            float y = zLine * cos(radians(realRage - 90.0f));
+            [img drawInRect:CGRectMake(_position.x - x - squareWidth*0.5,_position.y - y - squareWidth*0.5, squareWidth, squareWidth)];
+            NSLog(@"%d -2- x : %f 【%f】, y : %f 【%f】, width: %f ",i,_position.x - x,x, _position.y - y, y ,squareWidth);
+        }else if(realRage == 180){
+            [img drawInRect:CGRectMake(_position.x - zLine- squareWidth*0.5, _position.y - squareWidth*0.5, squareWidth, squareWidth)];
+            
+        }else if(realRage < 270){ //+ - y , x
+            float y = zLine * sin( radians(realRage - 180.0f));
+            float x = zLine * cos( radians(realRage - 180.0f));
+            [img drawInRect:CGRectMake(_position.x - x - squareWidth*0.5,_position.y + y - squareWidth*0.5, squareWidth, squareWidth)];
+            NSLog(@"%d -3- x : %f 【%f】, y : %f 【%f】, width: %f ",i,_position.x - x,x, _position.y - (-1 * y),y,squareWidth);
+        }else if(realRage == 270){
+            [img drawInRect:CGRectMake(_position.x - squareWidth*0.5, _position.y - zLine - squareWidth*0.5, squareWidth, squareWidth)];
+        }else if(realRage < 360){ // - - x , y
+            float x = zLine *sin(radians(realRage-270.0f));
+            float y = zLine *cos(radians(realRage - 270.0f));
+            [img drawInRect:CGRectMake(_position.x + x - squareWidth*0.5,_position.y - y - squareWidth*0.5, squareWidth, squareWidth)];
+            NSLog(@"%d end x: %f , y: %f ",i,_position.x + x - squareWidth*0.5,_position.y + y - squareWidth*0.5);
+        }else {
+            [img drawInRect:CGRectMake(_position.x - zLine - squareWidth*0.5, _position.y - squareWidth*0.5, squareWidth, squareWidth)];
+        }
     }
     
 }

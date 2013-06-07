@@ -20,6 +20,7 @@
 		A49A5CE0175DD41000F66865 /* TouchMenu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A49A5CDE175DD41000F66865 /* TouchMenu.xcdatamodeld */; };
 		A49A5CE9175DD77E00F66865 /* TouchMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = A49A5CE8175DD77E00F66865 /* TouchMenu.m */; };
 		A49A5CEC175DE1B300F66865 /* FrontlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A49A5CEB175DE1B300F66865 /* FrontlineViewController.m */; };
+		A49EE7CA1760242A005CED99 /* plus_32.png in Resources */ = {isa = PBXBuildFile; fileRef = A49EE7C91760242A005CED99 /* plus_32.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		A49A5CE8175DD77E00F66865 /* TouchMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchMenu.m; sourceTree = "<group>"; };
 		A49A5CEA175DE1B300F66865 /* FrontlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontlineViewController.h; sourceTree = "<group>"; };
 		A49A5CEB175DE1B300F66865 /* FrontlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontlineViewController.m; sourceTree = "<group>"; };
+		A49EE7C91760242A005CED99 /* plus_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus_32.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		A49A5CCD175DD40F00F66865 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A49EE7C91760242A005CED99 /* plus_32.png */,
 				A49A5CCE175DD40F00F66865 /* TouchMenu-Info.plist */,
 				A49A5CCF175DD40F00F66865 /* InfoPlist.strings */,
 				A49A5CD2175DD40F00F66865 /* main.m */,
@@ -180,6 +183,7 @@
 				A49A5CD9175DD41000F66865 /* Default.png in Resources */,
 				A49A5CDB175DD41000F66865 /* Default@2x.png in Resources */,
 				A49A5CDD175DD41000F66865 /* Default-568h@2x.png in Resources */,
+				A49EE7CA1760242A005CED99 /* plus_32.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +311,7 @@
 				A49A5CE5175DD41000F66865 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
